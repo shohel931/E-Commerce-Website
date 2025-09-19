@@ -146,6 +146,28 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
 }
+.caption .btn {
+    padding: 10px 20px;
+    background: #ff523b;
+    border: none;
+    border-radius: 5px;
+    color: #fff !important;
+}
+.caption .btn:hover {
+    background: #e04e34;
+}
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #111111;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 20px;
+}
 
 
 
