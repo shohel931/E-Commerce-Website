@@ -23,7 +23,7 @@ body {
 .logo a{
     font-size: 24px;
     font-weight: 700;
-    color: #333;
+    color: #3c1aff;
 }
 .logo a span {
     color: #ff523b;
@@ -73,16 +73,30 @@ body {
     background: #ff523b;
     color: #fff;
 }
-
+.btn {
+    padding: 15px;
+    width: 120px;
+    border: none;
+    color: #fff !important;
+    background-color: #3c1aff;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background: #fff;
+    background: #757575;
     padding: 15px;
 }
 .mobile-menu a {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 10px ;
+    border-bottom: none;
     color: #333;
 }
 .hamburger {
@@ -104,4 +118,5 @@ body {
         font-size: 24px;
         cursor: pointer;
     }
+    
 }
