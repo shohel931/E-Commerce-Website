@@ -102,6 +102,14 @@ body {
 .hamburger {
     display: none;
 }
+.all {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#icon {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .nav-menu {
@@ -118,5 +126,7 @@ body {
         font-size: 24px;
         cursor: pointer;
     }
-    
+    #icon {
+    display: block;
+    }
 }
