@@ -20,14 +20,15 @@ body {
     background: #fff;
     border-bottom: 1px solid #ddd;
 }
-.logo {
+.logo a{
     font-size: 24px;
     font-weight: 700;
     color: #333;
 }
-.logo span {
+.logo a span {
     color: #ff523b;
 }
+
 
 .nav-menu  {
     flex: 1;
