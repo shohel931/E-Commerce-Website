@@ -127,6 +127,21 @@ body {
     min-width: 100%;
     position: relative;
 }
+.slide img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.caption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: #fff;
+}
+.caption h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
 
 
 
