@@ -25,3 +25,13 @@ function showSlide() {
     const slidesContainer = document.querySelector('.slides');
     slidesContainer.style.transform = `translateX(-${index * 100}%)`;
 }
+
+document.querySelector(".next").addEventListener("click", () => {
+    nextSlide();
+    resetInterval();
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+    prevSlide();
+    resetInterval();
+});
