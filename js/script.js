@@ -12,5 +12,15 @@ let index = 0;
 
 document.querySelector(".next").addEventListener("click", () => {
     index = (index + 1) % slides.length;
-    showSlide(index);
+    showSlide();
 });
+
+document.querySelector(".prev").addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide();
+});
+
+function showSlide() {
+    const slidesContainer = document.querySelector('.slides');
+    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+}
