@@ -28,10 +28,14 @@ function showSlide() {
 
 document.querySelector(".next").addEventListener("click", () => {
     nextSlide();
-    resetInterval();
+    resetAutoSlide();
 });
 
 document.querySelector(".prev").addEventListener("click", () => {
     prevSlide();
-    resetInterval();
+    resetAutoSlide();
 });
+
+function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, 5000);
+}
