@@ -164,11 +164,12 @@ body {
     justify-content: space-between;
     color: #111111;
     font-size: 30px;
-    cursor: pointer;
     user-select: none;
     padding: 0 20px;
 }
-
+.prev, .next {
+    cursor: pointer;
+}
 
 
 

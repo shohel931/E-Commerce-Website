@@ -9,6 +9,7 @@ hamburger.addEventListener("click", () => {
 // Slider functionality
 const slides = document.querySelectorAll('.slide');
 let index = 0;
+let slideInterval;
 
 document.querySelector(".next").addEventListener("click", () => {
     index = (index + 1) % slides.length;
