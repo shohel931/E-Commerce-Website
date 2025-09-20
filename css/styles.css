@@ -128,8 +128,8 @@ body {
     position: relative;
 }
 .slide img {
-    width: 50%;
-    height: 50%;
+    width: 34%;
+    height: 80vh;
 }
 .caption {
     position: absolute;
@@ -213,5 +213,14 @@ body {
     }
     #icon {
     display: block;
+    }
+    .slide img {
+    width: 34%;
+    height: 60vh;
+    }
+    .navigation {
+    position: absolute;
+    top: 32%;
+    font-size: 22px;
     }
 }
