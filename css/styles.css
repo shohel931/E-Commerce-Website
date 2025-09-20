@@ -128,9 +128,8 @@ body {
     position: relative;
 }
 .slide img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
+    width: 50%;
+    height: 50%;
 }
 .caption {
     position: absolute;
