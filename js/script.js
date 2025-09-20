@@ -39,3 +39,9 @@ document.querySelector(".prev").addEventListener("click", () => {
 function startAutoSlide() {
     slideInterval = setInterval(nextSlide, 5000);
 }
+
+function resetAutoSlide() {
+    clearInterval(slideInterval);
+    startAutoSlide();
+}
+startAutoSlide();
