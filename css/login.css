@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container #loginForm,
+#registerForm {
+    width: 480px;
+    height: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ccc;
+}
+.container #loginForm h2,
+#registerForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.form-group {
+    width: 100%;
+    margin: 0 16%;
+}
+.form-group label {
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-group input {
+    width: 305px;
+    padding: 10px ;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.button,
+.toggle-link {
+    width: 100%;
+    text-align: center;
+}
+.button input {
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.button input:hover {
+    background: #333;
+}
+.toggle-link p {
+    font-size: 17px;
+}
+.toggle-link p a {
+    color: indigo;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+.toggle-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+.container #loginForm,
+#registerForm {
+    width: 400px;
+}
+.form-group input {
+    width: 250px;
+}
+.button input {
+    font-size: 15px;
+    padding: 10px 18px;
+}
+}

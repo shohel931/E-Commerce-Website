@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Login/Register - ShopZone</title>
 </head>
 <body>
@@ -12,11 +13,11 @@
             <h2>Login</h2>
             <form action="" method="post">
             <div class="form-group">
-                <label for="label">Email</label>
+                <label for="label">Email</label><br>
                 <input type="email" name="email" id="" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label for="label">Password</label>
+                <label for="label">Password</label><br>
                 <input type="password" name="password" id="" placeholder="Enter your password" required>
             </div>
             <div class="button">
@@ -24,13 +25,47 @@
             </div>
             </form>
             <div class="toggle-link">
-                Don't have an account? <a href="">Register</a>
+               <p> Don't have an account? <a onclick="toggleForm('register')">Register</a></p>
             </div>
         </div>
 
         <!-- Register Form -->
-         <div id="registerForm"></div>
+         <div id="registerForm" style="display: none;">
+            <h2>Register</h2>
+            <form action="" method="post">
+            <div class="form-group">
+                <label for="label">Frist Name</label><br>
+                <input type="text" name="fname" id="" placeholder="Enter your frist name" required>
+            </div>
+            <div class="form-group">
+                <label for="label">Last Name</label><br>
+                <input type="text" name="lname" id="" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="label">Username</label><br>
+                <input type="text" name="username" id="" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="label">Email</label><br>
+                <input type="email" name="email" id="" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="label">Phone Number</label><br>
+                <input type="number" name="pnumber" id="" placeholder="Enter your number" required>
+            </div>
+            <div class="form-group">
+                <label for="label">Password</label><br>
+                <input type="password" name="password" id="" placeholder="Enter your password" required>
+            </div>
+            <div class="button">
+                <input type="submit" name="register" value="Register">
+            </div>
+            </form>
+            <div class="toggle-link">
+                <p>Already have an account? <a onclick="toggleForm('login')">Login</a></p>
+            </div>
+         </div>
     </div>
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
